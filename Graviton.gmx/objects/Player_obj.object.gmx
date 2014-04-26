@@ -106,7 +106,7 @@ PlayerArm_obj.y =  y-50;
 //COLLISIONS
 
 //check for collision under player
-if physics_test_overlap(x,y+1,0,Solids_par)
+if physics_test_overlap(x,y+1,0,Solids_par) &amp;&amp; place_meeting(x,y+1,Solids_par)
 {MoveAction = 0;}
 
 //check for collision down and to the right of the player
@@ -125,9 +125,9 @@ if (keyboard_check_pressed(ord('W')) &amp;&amp; (MoveAction == 0 or MoveAction =
     if MoveAction == 0
     {phy_speed_y -= 6; MoveAction = 3;}//normal jump
     else if MoveAction = 1
-    {MoveAction = 4;/*phy_speed_y -= 5;phy_speed_x += 6;*/}//wall jump to the right
+    {MoveAction = 4;keyboard_clear(ord('A')); phy_speed_y -= 10;phy_speed_x += 3;}//wall jump to the right
     else if MoveAction = 2
-    {MoveAction = 4;/*phy_speed_y -= 5;phy_speed_x -= 6;*/}//wall jump to the left
+    {MoveAction = 4;keyboard_clear(ord('D'));phy_speed_y -= 10;phy_speed_x -= 3;}//wall jump to the left
 }
 
 //Left-------------------------------------------------------------

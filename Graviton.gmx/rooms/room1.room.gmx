@@ -54,7 +54,7 @@
     <instance objName="Physics_ctrl" x="1216" y="2944" name="inst_274C4FDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="EffectedByGrav_par" x="1344" y="2944" name="inst_C0F494F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor1_obj" x="0" y="2560" name="inst_42F344C9" locked="0" code="" scaleX="2" scaleY="34" colour="4294967295" rotation="0"/>
-    <instance objName="Floor1_obj" x="1280" y="4416" name="inst_C1417404" locked="0" code="" scaleX="2" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="1280" y="4544" name="inst_C1417404" locked="0" code="" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Floor1_obj" x="2048" y="4672" name="inst_33E2E75A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor1_obj" x="2048" y="4608" name="inst_24F35511" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor1_obj" x="2112" y="4672" name="inst_B7D83851" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -72,8 +72,6 @@
     <instance objName="Floor1_obj" x="2048" y="4480" name="inst_3A8C2AC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor1_obj" x="2048" y="4416" name="inst_B71CD1CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor1_obj" x="2112" y="4416" name="inst_0EFCB8D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floor1_obj" x="2112" y="4352" name="inst_AE4884E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floor1_obj" x="2048" y="4352" name="inst_0974B6E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor1_obj" x="4864" y="2176" name="inst_4C58CD43" locked="0" code="" scaleX="2" scaleY="40" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
