@@ -29,7 +29,7 @@
 instance_create(x,y-32,PlayerArm_obj);
 effected = true;
 
-image_speed = .2;
+image_speed = .3;
 
 State = 0;
 /*
@@ -106,15 +106,15 @@ PlayerArm_obj.y =  y-50;
 //COLLISIONS
 
 //check for collision under player
-if physics_test_overlap(x,y+89+2,0,Solids_par)
+if physics_test_overlap(x,y+1,0,Solids_par)
 {MoveAction = 0;}
 
 //check for collision down and to the right of the player
-if (MoveAction == 3) &amp;&amp; physics_test_overlap(x+45+2,y-89,0,Solids_par)
+if (MoveAction == 3) &amp;&amp; physics_test_overlap(x+1,y,0,Solids_par)
 {MoveAction = 2}//wall jump to the left}
 
 //check for collision down and to the left of the player
-if (MoveAction == 3) &amp;&amp; physics_test_overlap(x-45-2,y-89,0,Solids_par)
+if (MoveAction == 3) &amp;&amp; physics_test_overlap(x-1,y,0,Solids_par)
 {MoveAction = 1;}//wall jump to the right}
 
 
@@ -123,15 +123,15 @@ if (MoveAction == 3) &amp;&amp; physics_test_overlap(x-45-2,y-89,0,Solids_par)
 if (keyboard_check_pressed(ord('W')) &amp;&amp; (MoveAction == 0 or MoveAction == 1 or MoveAction == 2))
 {
     if MoveAction == 0
-    {MoveAction = 3;phy_speed_y += 50}//normal jump
+    {phy_speed_y -= 6; MoveAction = 3;}//normal jump
     else if MoveAction = 1
-    {MoveAction = 4;}//wall jump to the right
+    {MoveAction = 4;/*phy_speed_y -= 5;phy_speed_x += 6;*/}//wall jump to the right
     else if MoveAction = 2
-    {MoveAction = 4;}//wall jump to the left
+    {MoveAction = 4;/*phy_speed_y -= 5;phy_speed_x -= 6;*/}//wall jump to the left
 }
 
 //Left-------------------------------------------------------------
-if keyboard_check(ord('A'))
+if keyboard_check(ord('A')) &amp;&amp; !physics_test_overlap(x-5,y-1,0,Solids_par)
 {
 if phy_speed_x - 5 &gt; -6 {State = 2; phy_speed_x -= 5;}
 else
@@ -139,7 +139,7 @@ if phy_speed_x &gt; -6 {State = 2; phy_speed_x -= 1;}
 }
 
 //Right-------------------------------------------------------------
-if keyboard_check(ord('D'))
+if keyboard_check(ord('D')) &amp;&amp; !physics_test_overlap(x+5,y-1,0,Solids_par)
 {
 if phy_speed_x + 5 &lt; 6 {State = 1; phy_speed_x += 5;}
 else
@@ -322,11 +322,11 @@ draw_text(50,75,string(phy_speed_y)+"y");
             <string>draw_self();
 //left
 draw_set_color(c_black);
-draw_circle(x-90/2-4,y,5,false);
+draw_circle(x-27,y,5,false);
 
 //right
 draw_set_color(c_red);
-draw_circle(x+90/2+4,y,5,false);
+draw_circle(x+27,y,5,false);
 
 
 
@@ -350,9 +350,9 @@ draw_circle(x+90/2+4,y,5,false);
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>12,0</point>
-    <point>102,0</point>
-    <point>102,178</point>
-    <point>12,178</point>
+    <point>30,0</point>
+    <point>84,0</point>
+    <point>84,178</point>
+    <point>30,178</point>
   </PhysicsShapePoints>
 </object>
