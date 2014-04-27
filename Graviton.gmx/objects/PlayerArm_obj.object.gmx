@@ -64,7 +64,7 @@ image_yscale = 1;
 {
 alarm[0] = 200
 phy_rotation = (-(other.image_angle)-90);
-physics_apply_local_impulse(0,0,0,100);
+physics_apply_local_impulse(0,0,0,30);
 }
 </string>
           </argument>
@@ -91,7 +91,7 @@ physics_apply_local_impulse(0,0,0,100);
             <string>with(instance_create(Findx(sprite_width,sprite_height/2),Findy(sprite_width,sprite_height/2),BHBullet_obj))
 {
 phy_rotation = (-(other.image_angle)-90);
-physics_apply_local_impulse(0,0,0,200);
+physics_apply_local_impulse(0,0,0,250);
 }
 </string>
           </argument>

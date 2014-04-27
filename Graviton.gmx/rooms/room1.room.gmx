@@ -75,6 +75,18 @@
     <instance objName="Floor1_obj" x="2112" y="4352" name="inst_AE4884E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor1_obj" x="2048" y="4352" name="inst_0974B6E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor1_obj" x="4864" y="2176" name="inst_4C58CD43" locked="0" code="" scaleX="2" scaleY="40" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="1024" y="4672" name="inst_401BE5FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="1088" y="4672" name="inst_24FCE952" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="1152" y="4672" name="inst_5EAF0EE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="1216" y="4672" name="inst_4CAEC479" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="1088" y="4608" name="inst_8D9F3AD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="1152" y="4608" name="inst_33833F9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="1216" y="4608" name="inst_A0A1DE01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="1152" y="4544" name="inst_BAE0E925" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="1216" y="4544" name="inst_74F70928" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="1216" y="4480" name="inst_5E1C33A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="704" y="4672" name="inst_21D04829" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="512" y="4672" name="inst_2ED311D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>
