@@ -119,24 +119,24 @@ if ((physics_test_overlap(x,y+1,0,Solids_par) &amp;&amp; place_meeting(x,y+1,Sol
 {MoveAction = 0;}
 
 //check for collision down and to the right of the player
-if (MoveAction == 3) &amp;&amp; physics_test_overlap(x+1,y,0,Solids_par)
-{MoveAction = 2}//wall jump to the left}
+/*if (MoveAction == 3) &amp;&amp; physics_test_overlap(x+1,y,0,Solids_par)
+{MoveAction = 2}//wall jump to the left}*/
 
 //check for collision down and to the left of the player
-if (MoveAction == 3) &amp;&amp; physics_test_overlap(x-1,y,0,Solids_par)
-{MoveAction = 1;}//wall jump to the right}
+/*if (MoveAction == 3) &amp;&amp; physics_test_overlap(x-1,y,0,Solids_par)
+{MoveAction = 1;}//wall jump to the right}*/
 
 
 //MOVEMENT
 //Up---------------------------------------------------------------
-if (keyboard_check_pressed(ord('W')) &amp;&amp; (MoveAction == 0 or MoveAction == 1 or MoveAction == 2))
+if (keyboard_check_pressed(ord('W')) &amp;&amp; (MoveAction == 0 or MoveAction == 3))
 {
     if MoveAction == 0
     { MoveAction = -1; State = 3;YY = -32;}//normal jump
-    else if MoveAction = 1
-    {MoveAction = 3;keyboard_clear(ord('A')); phy_speed_y -= 10;phy_speed_x += 1;State = 7;}//wall jump to the right
-    else if MoveAction = 2
-    {MoveAction = 3;keyboard_clear(ord('D'));phy_speed_y -= 10;phy_speed_x -= 1;State = 6;}//wall jump to the left
+    else if MoveAction = 3
+    {MoveAction = 4; phy_speed_y -= 7;State = 6;}//wall jump to the right
+    /*else if MoveAction = 2
+    {MoveAction = 4;keyboard_clear(ord('D'));phy_speed_y -= 9;State = 6;}//wall jump to the left*/
 }
 
 //Left-------------------------------------------------------------
@@ -146,11 +146,13 @@ if phy_speed_x - 5 &gt; -6 {phy_speed_x -= 5;}
 else
 if phy_speed_x &gt; -6 {phy_speed_x -= 1;}
 
-if MoveAction == 3 or MoveAction = 4
-{State = 9}
+if MoveAction == 4
+{State = 9;}
+else if MoveAction == 3 
+{State = 5;}
 else
  if MoveAction == 0
-{State = 2}
+{State = 2;}
 }
 
 //Right-------------------------------------------------------------
@@ -160,11 +162,13 @@ if phy_speed_x + 5 &lt; 6 { phy_speed_x += 5;}
 else
 if phy_speed_x &lt; 6 { phy_speed_x += 1;}
 
-if MoveAction == 3 or MoveAction = 4
-{State = 8}
+if MoveAction == 4
+{State = 8;}
+else if MoveAction == 3 or MoveAction = 4
+{State = 4;}
 else
  if MoveAction == 0
-{State = 1}
+{State = 1;}
 }
 //--------------------------------------------------------------------
 if MoveAction = 0 &amp;&amp; !(keyboard_check(ord('D')) or keyboard_check(ord('A')) or keyboard_check(ord('W')))
@@ -223,19 +227,19 @@ sprite_index = Player_Jump_spr;
 break;
 
 case 4://jump right
-sprite_index = Player_Jump_spr; image_xscale = 1; PlayerArm_obj.image_yscale = 1;
+sprite_index = Player_Jump_Air_spr; image_xscale = 1; PlayerArm_obj.image_yscale = 1;
 break;
 
 case 5://jump left
-sprite_index = Player_Jump_spr; image_xscale = -1; PlayerArm_obj.image_yscale = -1;
+sprite_index = Player_Jump_Air_spr; image_xscale = -1; PlayerArm_obj.image_yscale = -1;
 break;
 
-case 6://wall jump right
-sprite_index = Player_Fall_spr; image_xscale = 1; PlayerArm_obj.image_yscale = 1; YY = -52; XX = 0;
+case 6://Double Jump
+sprite_index = Player_Jump_Air_spr; YY = -52; XX = 0;
 break;
 
-case 7://wall jump left
-sprite_index = Player_Fall_spr; image_xscale = -1; PlayerArm_obj.image_yscale = -1; YY = -52; XX = 0;
+case 7:
+
 break;
 
 case 8://Fall Right

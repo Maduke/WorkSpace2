@@ -11,6 +11,7 @@
     <sprite>sprites\Floor1_spr</sprite>
     <sprite>sprites\Floor2_spr</sprite>
     <sprite>sprites\Player_idle_spr</sprite>
+    <sprite>sprites\Player_Jump_Air_spr</sprite>
     <sprite>sprites\Player_Fall_spr</sprite>
     <sprite>sprites\Arm_spr</sprite>
     <sprite>sprites\sprite5</sprite>
