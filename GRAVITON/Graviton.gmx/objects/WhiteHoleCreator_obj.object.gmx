@@ -52,7 +52,7 @@ i = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x,y,BlackHole_obj);
+            <string>instance_create(x,y,WhiteHole_obj);
 
 </string>
           </argument>

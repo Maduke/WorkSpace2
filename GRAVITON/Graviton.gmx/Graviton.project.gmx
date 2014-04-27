@@ -43,7 +43,9 @@
     <objects name="Objects_folder">
       <object>objects\BHBullet_obj</object>
       <object>objects\BHBCreator_obj</object>
-      <object>objects\Graviball</object>
+      <object>objects\WhiteHoleCreator_obj</object>
+      <object>objects\BlackHole_obj</object>
+      <object>objects\WhiteHole_obj</object>
     </objects>
     <objects name="Controlls_Folder">
       <object>objects\Physics_ctrl</object>

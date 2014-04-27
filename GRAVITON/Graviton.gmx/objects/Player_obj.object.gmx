@@ -270,23 +270,73 @@ break;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Activate second gravity source
-var dist, pull, extrapull
-pull = 2000;
-Expull = 2000;
+            <string>///BlackHole
+var Bdist, Bpull, extraBpull
+Bpull = 2000;
+ExBpull = 2000;
 
-if instance_exists(Graviball)
+if instance_exists(BlackHole_obj)
 {
-    ix = instance_nearest(x,y,Graviball)
-    dist = point_distance(x, y, ix.x, ix.y);
-    if dist &gt; 0 extrapull = 100000/sqr(point_distance(x, y, ix.x, ix.y));
-    if extrapull &gt; Expull extrapull = Expull
+    ix = instance_nearest(x,y,BlackHole_obj)
+    Bdist = point_distance(x, y, ix.x, ix.y);
+    if Bdist &gt; 0 extraBpull = 100000/sqr(point_distance(x, y, ix.x, ix.y));
+    if extraBpull &gt; ExBpull extraBpull = ExBpull
     
-    if dist &lt; ix.radius
+    if Bdist &lt; ix.radius
     {
         physics_apply_force(x, y,
-                (pull+extrapull) * cos((point_direction(x, y, ix.x, ix.y)*(pi/180))),
-                -(pull+extrapull) * sin((point_direction(x, y, ix.x, ix.y)*(pi/180))));
+                (Bpull+extraBpull) * cos((point_direction(x, y, ix.x, ix.y)*(pi/180))),
+                -(Bpull+extraBpull) * sin((point_direction(x, y, ix.x, ix.y)*(pi/180))));
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///WhiteHole
+var Wdist, Wpull, extraWpull
+Wpull = -2000;
+ExWpull = -2000;
+
+if instance_exists(WhiteHole_obj)
+{
+    ix = instance_nearest(x,y,WhiteHole_obj)
+    Wdist = point_distance(x, y, ix.x, ix.y);
+    if Wdist &gt; 0 extraWpull = 100000/sqr(point_distance(x, y, ix.x, ix.y));
+    if extraWpull &gt; ExWpull extraWpull = ExWpull
+    
+    if Wdist &lt; ix.radius
+    {
+        physics_apply_force(x, y,
+                (Wpull+extraWpull) * cos((point_direction(x, y, ix.x, ix.y)*(pi/180))),
+                -(Wpull+extraWpull) * sin((point_direction(x, y, ix.x, ix.y)*(pi/180))));
     }
 }
 
