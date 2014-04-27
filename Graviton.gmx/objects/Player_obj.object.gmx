@@ -191,11 +191,11 @@ sprite_index = Player_spr; image_xscale = -1;
 break;
 
 case 3://jump right
-sprite_index = Player_spr; image_xscale = 1;
+sprite_index = Player_jump_spr; image_xscale = 1;
 break;
 
-case 4://hump left
-sprite_index = Player_spr; image_xscale = -1;
+case 4://jump left
+sprite_index = Player_jump_spr; image_xscale = -1;
 break;
 }
 </string>
