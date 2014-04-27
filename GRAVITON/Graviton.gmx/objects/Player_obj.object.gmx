@@ -231,11 +231,11 @@ sprite_index = Player_Jump_spr; image_xscale = -1; PlayerArm_obj.image_yscale = 
 break;
 
 case 6://wall jump right
-sprite_index = Player_Jump_spr; image_xscale = 1; PlayerArm_obj.image_yscale = 1; YY = -52; XX = 0;
+sprite_index = Player_Fall_spr; image_xscale = 1; PlayerArm_obj.image_yscale = 1; YY = -52; XX = 0;
 break;
 
 case 7://wall jump left
-sprite_index = Player_Jump_spr; image_xscale = -1; PlayerArm_obj.image_yscale = -1; YY = -52; XX = 0;
+sprite_index = Player_Fall_spr; image_xscale = -1; PlayerArm_obj.image_yscale = -1; YY = -52; XX = 0;
 break;
 
 case 8://Fall Right
