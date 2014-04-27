@@ -50,7 +50,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="Floor1_obj" x="64" y="4736" name="inst_38E9BA17" locked="0" code="" scaleX="76" scaleY="3.04761910438538" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="0" y="4736" name="inst_38E9BA17" locked="0" code="" scaleX="78" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Physics_ctrl" x="1216" y="2944" name="inst_274C4FDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="EffectedByGrav_par" x="1344" y="2944" name="inst_C0F494F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor1_obj" x="0" y="2560" name="inst_42F344C9" locked="0" code="" scaleX="2" scaleY="34" colour="4294967295" rotation="0"/>

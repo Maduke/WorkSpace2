@@ -123,7 +123,7 @@ if (MoveAction == 3) &amp;&amp; physics_test_overlap(x-1,y,0,Solids_par)
 if (keyboard_check_pressed(ord('W')) &amp;&amp; (MoveAction == 0 or MoveAction == 1 or MoveAction == 2))
 {
     if MoveAction == 0
-    {phy_speed_y -= 6; MoveAction = 3;}//normal jump
+    {phy_speed_y -= 10; MoveAction = 3;}//normal jump
     else if MoveAction = 1
     {MoveAction = 4;/*phy_speed_y -= 5;phy_speed_x += 6;*/}//wall jump to the right
     else if MoveAction = 2
