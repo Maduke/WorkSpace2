@@ -130,11 +130,11 @@ if ((physics_test_overlap(x,y+1,0,Solids_par) &amp;&amp; place_meeting(x,y+1,Sol
 //MOVEMENT
 //Up---------------------------------------------------------------
 if (keyboard_check_pressed(ord('W')) &amp;&amp; (MoveAction == 0 or MoveAction == 3))
-{
+{ 
     if MoveAction == 0
     { MoveAction = -1; State = 3;YY = -32;}//normal jump
     else if MoveAction = 3
-    {MoveAction = 4; phy_speed_y -= 7;State = 6;}//wall jump to the right
+    {MoveAction = 4; phy_speed_y -= 7;State = 6;}//Double Jump
     /*else if MoveAction = 2
     {MoveAction = 4;keyboard_clear(ord('D'));phy_speed_y -= 9;State = 6;}//wall jump to the left*/
 }
@@ -171,7 +171,7 @@ else
 {State = 1;}
 }
 //--------------------------------------------------------------------
-if MoveAction = 0 &amp;&amp; !(keyboard_check(ord('D')) or keyboard_check(ord('A')) or keyboard_check(ord('W')))
+if MoveAction = 0 &amp;&amp; !(keyboard_check(ord('D')) or keyboard_check(ord('A'))) 
 {
 State = 0;
 }
@@ -243,11 +243,11 @@ case 7:
 break;
 
 case 8://Fall Right
-sprite_index = Player_Fall_spr; image_xscale = 1; PlayerArm_obj.image_yscale = 1; YY = -48; XX = 0;
+sprite_index = Player_Fall_spr; image_xscale = 1; PlayerArm_obj.image_yscale = 1; YY = -36; XX = 0;
 break;
 
 case 9://Fall Left
-sprite_index = Player_Fall_spr; image_xscale = -1; PlayerArm_obj.image_yscale = -1; YY = -48; XX = 0;
+sprite_index = Player_Fall_spr; image_xscale = -1; PlayerArm_obj.image_yscale = -1; YY = -36; XX = 0;
 break;
 }
 </string>

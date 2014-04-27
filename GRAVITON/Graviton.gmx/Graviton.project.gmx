@@ -17,7 +17,8 @@
     <sprite>sprites\sprite5</sprite>
     <sprite>sprites\Player_Jump_spr</sprite>
     <sprite>sprites\Player_Walk_spr</sprite>
-    <sprite>sprites\BlackHole</sprite>
+    <sprite>sprites\BlackHole_spr</sprite>
+    <sprite>sprites\WhiteHole_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -32,21 +33,29 @@
     <font>fonts\Normal_Font</font>
   </fonts>
   <objects name="objects">
-    <objects name="Floors">
-      <object>objects\Floor1_obj</object>
-      <object>objects\Floor2_obj</object>
+    <objects name="Player_folder">
+      <object>objects\Player_obj</object>
+      <object>objects\PlayerArm_obj</object>
     </objects>
-    <object>objects\Player_obj</object>
-    <object>objects\Solids_par</object>
-    <object>objects\PlayerArm_obj</object>
-    <object>objects\BHBullet_obj</object>
-    <object>objects\Graviball</object>
-    <object>objects\BHBCreator_obj</object>
-    <object>objects\Physics_ctrl</object>
-    <object>objects\EffectedByGrav_par</object>
-    <object>objects\Resolution_ctrl</object>
-    <object>objects\ResolutionHolder_ctrl</object>
-    <object>objects\Init_ctrl</object>
+    <objects name="Solids_Folder">
+      <object>objects\Floor1_obj</object>
+    </objects>
+    <objects name="Objects_folder">
+      <object>objects\BHBullet_obj</object>
+      <object>objects\BHBCreator_obj</object>
+      <object>objects\Graviball</object>
+    </objects>
+    <objects name="Controlls_Folder">
+      <object>objects\Physics_ctrl</object>
+      <object>objects\Resolution_ctrl</object>
+      <object>objects\ResolutionHolder_ctrl</object>
+      <object>objects\Init_ctrl</object>
+      <object>objects\View_ctrl</object>
+    </objects>
+    <objects name="Parents_folder">
+      <object>objects\EffectedByGrav_par</object>
+      <object>objects\Solids_par</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\Init_Room</room>

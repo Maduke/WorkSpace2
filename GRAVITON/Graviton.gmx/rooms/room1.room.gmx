@@ -40,7 +40,7 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="Player_obj" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="400" vborder="200" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="400" vborder="200" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -51,8 +51,8 @@
   </views>
   <instances>
     <instance objName="Floor1_obj" x="64" y="4736" name="inst_38E9BA17" locked="0" code="" scaleX="76" scaleY="3.04761910438538" colour="4294967295" rotation="0"/>
-    <instance objName="Physics_ctrl" x="1216" y="2944" name="inst_274C4FDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="EffectedByGrav_par" x="1344" y="2944" name="inst_C0F494F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Physics_ctrl" x="256" y="64" name="inst_274C4FDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="EffectedByGrav_par" x="192" y="64" name="inst_C0F494F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor1_obj" x="0" y="2560" name="inst_42F344C9" locked="0" code="" scaleX="2" scaleY="34" colour="4294967295" rotation="0"/>
     <instance objName="Floor1_obj" x="1280" y="4544" name="inst_C1417404" locked="0" code="" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Floor1_obj" x="2048" y="4672" name="inst_33E2E75A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -74,6 +74,12 @@
     <instance objName="Floor1_obj" x="2112" y="4416" name="inst_0EFCB8D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor1_obj" x="4864" y="2176" name="inst_4C58CD43" locked="0" code="" scaleX="2" scaleY="40" colour="4294967295" rotation="0"/>
     <instance objName="ResolutionHolder_ctrl" x="64" y="64" name="inst_CC11D1A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="View_ctrl" x="128" y="64" name="inst_88081D27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="64" y="576" name="inst_5C42810E" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="832" y="1088" name="inst_F9171568" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="1600" y="1856" name="inst_DC2B2A30" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="0" y="960" name="inst_7654AA7A" locked="0" code="" scaleX="2" scaleY="14" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="576" y="0" name="inst_BC395CB2" locked="0" code="" scaleX="68.0634918212891" scaleY="2" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>
