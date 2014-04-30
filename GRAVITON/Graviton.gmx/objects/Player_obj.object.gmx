@@ -154,7 +154,7 @@ else
 {State = 2;}
 if physics_test_overlap(x-5,y-1,0,Ramp_par)
 {
-physics_apply_force(x,y,0,-2200);
+physics_apply_force(x,y,0,-800);
 }
 }
 
@@ -175,7 +175,7 @@ else
 
 if physics_test_overlap(x+5,y-1,0,Ramp_par)
 {
-physics_apply_force(x,y,0,-2200);
+physics_apply_force(x,y,0,-800);
 }
 }
 //--------------------------------------------------------------------
