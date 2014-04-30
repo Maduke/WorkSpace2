@@ -80,6 +80,15 @@
     <instance objName="Floor1_obj" x="1600" y="1856" name="inst_DC2B2A30" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floor1_obj" x="0" y="960" name="inst_7654AA7A" locked="0" code="" scaleX="2" scaleY="14" colour="4294967295" rotation="0"/>
     <instance objName="Floor1_obj" x="576" y="0" name="inst_BC395CB2" locked="0" code="" scaleX="68.0634918212891" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="WoodenBox_obj" x="1792" y="1664" name="inst_4EEC6855" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="WoodenBox_obj" x="1792" y="1536" name="inst_A9E0EED1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="WoodenBox_obj" x="1856" y="1600" name="inst_8B045D14" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="WoodenBox_obj" x="1728" y="1536" name="inst_8C428131" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="WoodenBox_obj" x="1664" y="1600" name="inst_3AEAC6E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="WoodenBox_obj" x="1856" y="1344" name="inst_8705D3C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="WoodenBox_obj" x="1728" y="1344" name="inst_79F9A5D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="WoodenBox_obj" x="1600" y="1408" name="inst_F9F5CB34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="WoodenBox_obj" x="1792" y="1408" name="inst_AB85068D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>
