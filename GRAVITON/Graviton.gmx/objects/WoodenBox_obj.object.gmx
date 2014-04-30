@@ -25,7 +25,21 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>phy_bullet = true;
+            <string>
+fix = physics_fixture_create();
+
+physics_fixture_set_box_shape(fix,16,16);
+physics_fixture_set_density(fix,.3);
+physics_fixture_set_restitution(fix,.4);
+physics_fixture_set_collision_group(fix,0);
+physics_fixture_set_linear_damping(fix,.2);
+physics_fixture_set_angular_damping(fix,.1);
+physics_fixture_set_friction(fix,.2);
+
+physics_fixture_bind(fix,self);
+physics_fixture_delete(fix);
+
+phy_bullet = true;
 effected = true;
 </string>
           </argument>
@@ -168,7 +182,7 @@ if instance_exists(WhiteHole_obj)
       </action>
     </event>
   </events>
-  <PhysicsObject>-1</PhysicsObject>
+  <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>1</PhysicsObjectShape>
   <PhysicsObjectDensity>0.300000011920929</PhysicsObjectDensity>

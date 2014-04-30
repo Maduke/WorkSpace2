@@ -21,6 +21,7 @@
     <sprite>sprites\WhiteHole_spr</sprite>
     <sprite>sprites\WoodenBox_spr</sprite>
     <sprite>sprites\PressurePlate_spr</sprite>
+    <sprite>sprites\Door_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -41,6 +42,7 @@
     </objects>
     <objects name="Solids_Folder">
       <object>objects\Floor1_obj</object>
+      <object>objects\Ramp1_obj</object>
     </objects>
     <objects name="Objects_folder">
       <object>objects\BHBullet_obj</object>
@@ -49,6 +51,8 @@
       <object>objects\WhiteHoleCreator_obj</object>
       <object>objects\BlackHole_obj</object>
       <object>objects\WhiteHole_obj</object>
+      <object>objects\PressurePlate_obj</object>
+      <object>objects\Door_obj</object>
     </objects>
     <objects name="Controlls_Folder">
       <object>objects\Physics_ctrl</object>
@@ -60,6 +64,7 @@
     <objects name="Parents_folder">
       <object>objects\EffectedByGrav_par</object>
       <object>objects\Solids_par</object>
+      <object>objects\Ramp_par</object>
     </objects>
   </objects>
   <rooms name="rooms">
