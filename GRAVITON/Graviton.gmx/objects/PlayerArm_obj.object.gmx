@@ -27,18 +27,7 @@
             <kind>1</kind>
             <string>image_angle = point_direction(x,y,mouse_x,mouse_y);
 
-/*//face left
-if image_angle &gt; 90 &amp;&amp; image_angle &lt; 270 
-{
-image_yscale = -1;
-}
 
-//face right
-if image_angle &gt; 270 or (image_angle &gt; 0 &amp;&amp; image_angle &lt; 90)
-{
-image_yscale = 1;
-}
-*/
 
 
 

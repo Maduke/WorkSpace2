@@ -10,13 +10,20 @@
     <sprite>sprites\BHBullet_spr</sprite>
     <sprite>sprites\Floor1_spr</sprite>
     <sprite>sprites\Floor2_spr</sprite>
-    <sprite>sprites\Player_idle_spr</sprite>
-    <sprite>sprites\Player_Jump_Air_spr</sprite>
-    <sprite>sprites\Player_Fall_spr</sprite>
-    <sprite>sprites\Arm_spr</sprite>
     <sprite>sprites\sprite5</sprite>
-    <sprite>sprites\Player_Jump_spr</sprite>
-    <sprite>sprites\Player_Walk_spr</sprite>
+    <sprites name="Player_Sprites">
+      <sprite>sprites\Player_WalkR_spr</sprite>
+      <sprite>sprites\Player_WalkL_spr</sprite>
+      <sprite>sprites\Player_JumpL_spr</sprite>
+      <sprite>sprites\Player_JumpR_spr</sprite>
+      <sprite>sprites\Player_FallR_spr</sprite>
+      <sprite>sprites\Player_FallL_spr</sprite>
+      <sprite>sprites\Player_Jump_AirR_spr</sprite>
+      <sprite>sprites\Player_Jump_AirL_spr</sprite>
+      <sprite>sprites\Player_idleR_spr</sprite>
+      <sprite>sprites\Player_idleL_spr</sprite>
+      <sprite>sprites\Arm_spr</sprite>
+    </sprites>
     <sprite>sprites\BlackHole_spr</sprite>
     <sprite>sprites\WhiteHole_spr</sprite>
     <sprite>sprites\WoodenBox_spr</sprite>
@@ -31,6 +38,8 @@
     <script>scripts\Findx.gml</script>
     <script>scripts\Findy.gml</script>
     <script>scripts\Initialize_Game.gml</script>
+    <script>scripts\PTSX.gml</script>
+    <script>scripts\PTSY.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\Normal_Font</font>

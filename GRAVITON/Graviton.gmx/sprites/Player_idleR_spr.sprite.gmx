@@ -19,6 +19,6 @@
   <width>114</width>
   <height>178</height>
   <frames>
-    <frame index="0">images\Player_Jump_Air_spr_0.png</frame>
+    <frame index="0">images\Player_idleR_spr_0.png</frame>
   </frames>
 </sprite>
