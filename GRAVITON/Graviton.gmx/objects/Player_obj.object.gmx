@@ -125,8 +125,11 @@ if (State = 0 or State = 2 or State = 4 or State = 6 or State = 8)
 //COLLISIONS
 
 //check for collision under player
-if ((physics_test_overlap(x,y+1,0,Solids_par) &amp;&amp; place_meeting(x,y+1,Solids_par)) or (physics_test_overlap(x,y+1,0,EffectedByGrav_par) &amp;&amp; place_meeting(x,y+1,EffectedByGrav_par))) &amp;&amp; MoveAction != -1
+if ((physics_test_overlap(x,y+2,Ang,Solids_par) &amp;&amp; place_meeting(x,y+2,Solids_par)) or (physics_test_overlap(x,y+1,Ang,EffectedByGrav_par) &amp;&amp; place_meeting(x,y+1,EffectedByGrav_par))) &amp;&amp; MoveAction != -1
 {MoveAction = 0;}
+else if MoveAction == 0
+{MoveAction = 4;}
+
 
 //MOVEMENT
 //Up---------------------------------------------------------------
@@ -153,12 +156,6 @@ else if MoveAction == 3  // air
 else
  if MoveAction == 0 // ground
 {State = 3;}
-if physics_test_overlap(x-5,y-1,0,Ramp_par)
-{
-Ang = -45;
-}
-else
-{/*phy_rotation = 0;*/}
 }
 
 //Right-------------------------------------------------------------
@@ -175,13 +172,6 @@ else if MoveAction == 3
 else
  if MoveAction == 0
 {State = 2;}
-
-if physics_test_overlap(x+5,y-1,0,Ramp_par)
-{
-Ang = -45;
-}
-else
-{/*phy_rotation = 0;*/}
 }
 //--------------------------------------------------------------------
 if MoveAction = 0 &amp;&amp; !(keyboard_check(ord('D')) or keyboard_check(ord('A'))) 
@@ -197,6 +187,10 @@ if image_index &gt; 4
 if (State = 0 or State = 2 or State = 4 or State = 6 or State = 8) {State = 0;} else if (State = 1 or State = 3 or State = 5 or State = 7 or State = 9) {State = 1;}; phy_speed_y -= 8; MoveAction = 3;YY = -28;
 }
 }
+
+if MoveAction = 1 or MoveAction = 2 or MoveAction = 3 or MoveAction = 4
+{Ang = 0; phy_rotation = Ang;}
+
 
 
 
@@ -369,6 +363,54 @@ if instance_exists(WhiteHole_obj)
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="Floor_par">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Ang = 0;
+phy_rotation = Ang;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Ramp_par">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Ang = radtodeg(arctan(other.sprite_height/other.sprite_width));
+phy_rotation = Ang;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="Solids_par">
       <action>
         <libid>1</libid>
@@ -412,41 +454,6 @@ if instance_exists(WhiteHole_obj)
             <kind>1</kind>
             <string>draw_text(50,50,string(phy_speed_x)+"x");
 draw_text(50,75,string(phy_speed_y)+"y");
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_self();
-//left
-draw_set_color(c_black);
-draw_circle(x-27,y,5,false);
-
-//right
-draw_set_color(c_red);
-draw_circle(x+27,y,5,false);
-
-
-
-
 
 </string>
           </argument>
