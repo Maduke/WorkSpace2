@@ -118,11 +118,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with(instance_create(Findx(sprite_width,sprite_height/2),Findy(sprite_width,sprite_height/2),BHBullet_obj))
+            <string>
+with(instance_create(Findx(sprite_width,sprite_height/2),Findy(sprite_width,sprite_height/2),BHBullet_obj))
 {
 phy_rotation = (-(other.image_angle)-90);
 physics_apply_local_impulse(0,0,0,200);
 }
+
 </string>
           </argument>
         </arguments>

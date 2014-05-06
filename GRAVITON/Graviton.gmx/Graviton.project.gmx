@@ -35,6 +35,11 @@
   <backgrounds name="background">
     <background>background\background0</background>
     <background>background\background1</background>
+    <background>background\Back2</background>
+    <background>background\Back3</background>
+    <background>background\Back4</background>
+    <background>background\BackB</background>
+    <background>background\Back1</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">

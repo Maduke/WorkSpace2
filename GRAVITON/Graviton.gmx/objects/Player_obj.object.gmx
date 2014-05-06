@@ -380,7 +380,11 @@ if instance_exists(WhiteHole_obj)
           <argument>
             <kind>1</kind>
             <string>///update Backgrounds speed
-background_hspeed = phy_speed_x/3;
+background_hspeed[4] = phy_speed_x/12;
+background_hspeed[3] = phy_speed_x/9;
+background_hspeed[2] = phy_speed_x/6;
+background_hspeed[1] = phy_speed_x/3;
+
 </string>
           </argument>
         </arguments>
