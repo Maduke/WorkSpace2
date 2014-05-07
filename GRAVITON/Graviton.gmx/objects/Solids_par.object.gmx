@@ -49,7 +49,7 @@
           <argument>
             <kind>1</kind>
             <string>draw_self();
-/*draw_set_color(c_blue);
+draw_set_color(c_blue);
 physics_draw_debug();
 </string>
           </argument>

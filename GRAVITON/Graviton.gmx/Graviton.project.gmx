@@ -71,6 +71,7 @@
       <object>objects\BlackHole_obj</object>
       <object>objects\WhiteHole_obj</object>
       <object>objects\PressurePlate_obj</object>
+      <object>objects\PressurePlate2_obj</object>
       <object>objects\Trigger_obj</object>
       <object>objects\Door_obj</object>
       <object>objects\RocketSpawner_obj</object>

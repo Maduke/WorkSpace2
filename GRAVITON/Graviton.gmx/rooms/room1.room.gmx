@@ -3,8 +3,8 @@
   <caption></caption>
   <width>3000</width>
   <height>1000</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -50,39 +50,30 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="EffectedByGrav_par" x="128" y="64" name="inst_C16C8AAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="View_ctrl" x="192" y="64" name="inst_68EBDB9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ResolutionHolder_ctrl" x="256" y="64" name="inst_07B59B11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Physics_ctrl" x="64" y="64" name="inst_4150CB2A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floor1_obj" x="0" y="896" name="inst_E846ABAA" locked="0" code="" scaleX="47" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="Floor1_obj" x="0" y="128" name="inst_80CCDB59" locked="0" code="" scaleX="1" scaleY="12" colour="4294967295" rotation="0"/>
-    <instance objName="Floor1_obj" x="2240" y="704" name="inst_53E5D8CE" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="Ramp1_obj" x="2304" y="640" name="inst_FBEAF69B" locked="0" code="angle = arctan(1/2);&#xA;" scaleX="6" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="Ramp1_obj" x="1984" y="640" name="inst_930858BF" locked="0" code="angle = arctan(-1/2);&#xA;" scaleX="-6" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="Floor1_obj" x="2000" y="640" name="inst_EDACE005" locked="0" code="" scaleX="4.5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floor1_obj" x="1984" y="832" name="inst_2745B58B" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floor1_obj" x="1984" y="704" name="inst_48F18495" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="PseudoFloor_spr" x="1984" y="640" name="inst_577766CE" locked="0" code="" scaleX="0.25" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="PseudoFloor_spr" x="2288" y="640" name="inst_8AF20F98" locked="0" code="" scaleX="0.25" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floor1_obj" x="608" y="768" name="inst_4D92C2E3" locked="0" code="" scaleX="0.25" scaleY="0.25" colour="4294967295" rotation="0"/>
-    <instance objName="Floor1_obj" x="384" y="768" name="inst_2FA38806" locked="0" code="" scaleX="0.25" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="Floor1_obj" x="624" y="768" name="inst_38A56623" locked="0" code="" scaleX="0.25" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="Floor1_obj" x="400" y="768" name="inst_20429A44" locked="0" code="" scaleX="0.253968268632889" scaleY="0.266666680574417" colour="4294967295" rotation="0"/>
-    <instance objName="PressurePlate_obj" x="512" y="832" name="inst_73DD7DAC" locked="0" code="doornumber = 1;&#xA;" scaleX="3.125" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Trigger_obj" x="512" y="896" name="inst_86D14D9A" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="Door_obj" x="2208" y="640" name="inst_3E2AD20E" locked="0" code="doornumber = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="SlopedCeiling_obj" x="2176" y="416" name="inst_3E35FC59" locked="0" code="" scaleX="10" scaleY="-1" colour="4294967295" rotation="0"/>
-    <instance objName="SlopedCeiling_obj" x="2048" y="416" name="inst_FAAFFDBF" locked="0" code="" scaleX="-10" scaleY="-1" colour="4294967295" rotation="0"/>
-    <instance objName="Floor1_obj" x="2048" y="352" name="inst_74EF1CF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floor1_obj" x="2112" y="352" name="inst_530C9FEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floor1_obj" x="1536" y="288" name="inst_7BA835BF" locked="0" code="" scaleX="18.2856998443604" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Floor1_obj" x="1408" y="0" name="inst_3902245B" locked="0" code="" scaleX="2" scaleY="5.58730173110962" colour="4294967295" rotation="0"/>
-    <instance objName="Floor1_obj" x="2688" y="0" name="inst_BB195F02" locked="0" code="" scaleX="2" scaleY="5.58729982376099" colour="4294967295" rotation="0"/>
-    <instance objName="Floor1_obj" x="1536" y="0" name="inst_4921654B" locked="0" code="" scaleX="18" scaleY="4.5" colour="4294967295" rotation="0"/>
-    <instance objName="RocketSpawner_obj" x="768" y="128" name="inst_C8084B7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="270"/>
-    <instance objName="RocketSpawner_obj" x="96" y="448" name="inst_0FEDC1B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="RocketSpawner_obj" x="1376" y="320" name="inst_A0D7B6C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
-    <instance objName="RocketSpawner_obj" x="1056" y="864" name="inst_73DAC021" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="Floor1_obj" x="0" y="928" name="inst_28221E1E" locked="0" code="" scaleX="26.5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="EffectedByGrav_par" x="240" y="416" name="inst_0C5DA440" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Physics_ctrl" x="304" y="416" name="inst_CB0DDB5A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ResolutionHolder_ctrl" x="368" y="416" name="inst_E61F1FB3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="View_ctrl" x="432" y="416" name="inst_3D5425A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ramp1_obj" x="1312" y="864" name="inst_0AFB29CE" locked="0" code="" scaleX="-5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="1320" y="864" name="inst_AC985271" locked="0" code="" scaleX="1.5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Trigger_obj" x="1536" y="432" name="inst_27A0A39E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="PressurePlate_obj" x="1536" y="352" name="inst_8EA4F8A8" locked="0" code="doornumber = 1;&#xA;" scaleX="2.25" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="1440" y="128" name="inst_B70D90CE" locked="0" code="" scaleX="0.5" scaleY="0.25" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="1600" y="128" name="inst_AD77FE55" locked="0" code="" scaleX="0.5" scaleY="0.25" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="1616" y="144" name="inst_AE3B1906" locked="0" code="" scaleX="0.25" scaleY="4.5" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="1440" y="144" name="inst_309D9052" locked="0" code="" scaleX="0.25" scaleY="4.57142877578735" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="1440" y="432" name="inst_DB401666" locked="0" code="" scaleX="3" scaleY="0.25" colour="4294967295" rotation="0"/>
+    <instance objName="SlopedCeiling_obj" x="1632" y="128" name="inst_76B08DE5" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="PseudoFloor_spr" x="1312" y="864" name="inst_051323DC" locked="0" code="" scaleX="0.133333340287209" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="1312" y="448" name="inst_7CB19C16" locked="0" code="" scaleX="7" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="1936" y="864" name="inst_696C939B" locked="0" code="" scaleX="16.25" scaleY="2.03174614906311" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="2832" y="0" name="inst_E9747099" locked="0" code="" scaleX="1.77777779102325" scaleY="10" colour="4294967295" rotation="0"/>
+    <instance objName="Door_obj" x="2944" y="864" name="inst_AFA09B81" locked="0" code="doornumber = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="0" y="-48" name="inst_6568149B" locked="0" code="" scaleX="46" scaleY="0.75" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="0" y="0" name="inst_CD0F3C2C" locked="0" code="" scaleX="0.75" scaleY="14.5" colour="4294967295" rotation="0"/>
+    <instance objName="Floor1_obj" x="1696" y="992" name="inst_B761CCA4" locked="0" code="" scaleX="3.75" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="SlopedCeiling_obj" x="1440" y="128" name="inst_7666EB34" locked="0" code="" scaleX="-1" scaleY="5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>
