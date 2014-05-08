@@ -31,6 +31,7 @@
     <sprite>sprites\Door_spr</sprite>
     <sprite>sprites\RocketSpawner_spr</sprite>
     <sprite>sprites\Rocket_spr</sprite>
+    <sprite>sprites\sprite22</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -72,6 +73,7 @@
       <object>objects\WhiteHole_obj</object>
       <object>objects\PressurePlate_obj</object>
       <object>objects\PressurePlate2_obj</object>
+      <object>objects\CollisionBox_obj</object>
       <object>objects\Trigger_obj</object>
       <object>objects\Door_obj</object>
       <object>objects\RocketSpawner_obj</object>
