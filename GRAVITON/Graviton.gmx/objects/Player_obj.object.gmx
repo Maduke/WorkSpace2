@@ -66,6 +66,7 @@ AA = 0;
 
 
 
+
 </string>
           </argument>
         </arguments>
@@ -383,6 +384,50 @@ if instance_exists(WhiteHole_obj)
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///Explosion
+var Edist, Epull, extraEpull
+Epull = -20000;
+ExEpull = -20000;
+
+if instance_exists(Explosion_obj)
+{
+    ix = instance_nearest(x,y,Explosion_obj)
+    Edist = point_distance(x, y, ix.x, ix.y);
+    if Edist &gt; 0 extraEpull = 100000/sqr(point_distance(x, y, ix.x, ix.y));
+    if extraEpull &gt; ExEpull extraEpull = ExEpull
+    
+    if Edist &lt; ix.radius
+    {
+    //apply the force of the gravity field
+        physics_apply_force(x, y,
+                (Epull+extraEpull) * cos((point_direction(x, y, ix.x, ix.y)*(pi/180))),
+                -(Epull+extraEpull) * sin((point_direction(x, y, ix.x, ix.y)*(pi/180))));
+    }
+  
+}
+
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>///update Backgrounds speed
 background_hspeed[4] = phy_speed_x/12;
 background_hspeed[3] = phy_speed_x/9;
@@ -543,7 +588,7 @@ draw_text(50,100,string(AA)+"angle");
           <argument>
             <kind>1</kind>
             <string>draw_set_color(c_red);
-physics_draw_debug();
+//physics_draw_debug();
 draw_set_color(c_black);
 draw_self();
 </string>
@@ -564,11 +609,11 @@ draw_self();
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>38,0</point>
-    <point>78,0</point>
-    <point>86,174</point>
-    <point>74,178</point>
-    <point>42,178</point>
-    <point>30,174</point>
+    <point>58,0</point>
+    <point>78,8</point>
+    <point>82,170</point>
+    <point>58,178</point>
+    <point>34,170</point>
+    <point>38,8</point>
   </PhysicsShapePoints>
 </object>

@@ -32,6 +32,8 @@
     <sprite>sprites\RocketSpawner_spr</sprite>
     <sprite>sprites\Rocket_spr</sprite>
     <sprite>sprites\sprite22</sprite>
+    <sprite>sprites\sprite23</sprite>
+    <sprite>sprites\dot_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -77,7 +79,10 @@
       <object>objects\Trigger_obj</object>
       <object>objects\Door_obj</object>
       <object>objects\RocketSpawner_obj</object>
+      <object>objects\Paddle_obj</object>
       <object>objects\Rocket_obj</object>
+      <object>objects\RocketTrail_obj</object>
+      <object>objects\Explosion_obj</object>
     </objects>
     <objects name="Controlls_Folder">
       <object>objects\Physics_ctrl</object>
@@ -90,6 +95,7 @@
       <object>objects\EffectedByGrav_par</object>
       <object>objects\Solids_par</object>
       <object>objects\Ramp_par</object>
+      <object>objects\Interactive_par</object>
       <object>objects\Floor_par</object>
     </objects>
   </objects>
