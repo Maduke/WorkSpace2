@@ -25,6 +25,7 @@
       <sprite>sprites\Arm_spr</sprite>
     </sprites>
     <sprite>sprites\BlackHole_spr</sprite>
+    <sprite>sprites\Goal_spr</sprite>
     <sprite>sprites\WhiteHole_spr</sprite>
     <sprite>sprites\WoodenBox_spr</sprite>
     <sprite>sprites\PressurePlate_spr</sprite>
@@ -32,7 +33,7 @@
     <sprite>sprites\RocketSpawner_spr</sprite>
     <sprite>sprites\Rocket_spr</sprite>
     <sprite>sprites\sprite22</sprite>
-    <sprite>sprites\sprite23</sprite>
+    <sprite>sprites\paddle_spr</sprite>
     <sprite>sprites\dot_spr</sprite>
   </sprites>
   <backgrounds name="background">
@@ -83,6 +84,7 @@
       <object>objects\Rocket_obj</object>
       <object>objects\RocketTrail_obj</object>
       <object>objects\Explosion_obj</object>
+      <object>objects\NextLVL_ctrl</object>
     </objects>
     <objects name="Controlls_Folder">
       <object>objects\Physics_ctrl</object>
@@ -102,6 +104,7 @@
   <rooms name="rooms">
     <room>rooms\Init_Room</room>
     <room>rooms\Menu_Room</room>
+    <room>rooms\room4</room>
     <room>rooms\room1</room>
   </rooms>
   <help>

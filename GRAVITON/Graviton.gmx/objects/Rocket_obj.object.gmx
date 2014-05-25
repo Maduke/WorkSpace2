@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[1] = 5;
+            <string>alarm[1] = 2;
 effected = true;
 </string>
           </argument>
@@ -72,8 +72,8 @@ effected = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x,y,RocketTrail_obj);
-alarm[1] = 5;
+            <string>instance_create(Findx(12,10),Findy(12,10),RocketTrail_obj);
+alarm[1] = 2;
 </string>
           </argument>
         </arguments>
@@ -99,8 +99,8 @@ alarm[1] = 5;
             <string>///Blackhole
 //activate the gravity balls
 var Bdist, Bpull, extraBpull
-Bpull = 600;
-ExBpull = 4000;
+Bpull = 2000;
+ExBpull = 6000;
 
 if instance_exists(BlackHole_obj)
 {
@@ -143,8 +143,8 @@ if instance_exists(BlackHole_obj)
             <kind>1</kind>
             <string>///Whitehhole
 var Wdist, Wpull, extraWpull
-Wpull = -50;
-ExWpull = -500;
+Wpull = -60;
+ExWpull = -600;
 
 if instance_exists(WhiteHole_obj)
 {
@@ -185,8 +185,8 @@ if instance_exists(WhiteHole_obj)
             <kind>1</kind>
             <string>///Explosion
 var Edist, Epull, extraEpull
-Epull = -20000;
-ExEpull = -20000;
+Epull = -10000;
+ExEpull = -10000;
 
 if instance_exists(Explosion_obj)
 {
@@ -285,10 +285,10 @@ if instance_exists(Explosion_obj)
   <PhysicsObject>-1</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>2</PhysicsObjectShape>
-  <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
+  <PhysicsObjectDensity>0.899999976158142</PhysicsObjectDensity>
   <PhysicsObjectRestitution>0</PhysicsObjectRestitution>
   <PhysicsObjectGroup>0</PhysicsObjectGroup>
-  <PhysicsObjectLinearDamping>0.100000001490116</PhysicsObjectLinearDamping>
+  <PhysicsObjectLinearDamping>0</PhysicsObjectLinearDamping>
   <PhysicsObjectAngularDamping>1</PhysicsObjectAngularDamping>
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
